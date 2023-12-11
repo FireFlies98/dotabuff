@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dotabuff/static/css/main.afa56df0.css",
+    "main.js": "/dotabuff/static/js/main.d34355ef.js",
+    "index.html": "/dotabuff/index.html",
+    "main.afa56df0.css.map": "/dotabuff/static/css/main.afa56df0.css.map",
+    "main.d34355ef.js.map": "/dotabuff/static/js/main.d34355ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.afa56df0.css",
+    "static/js/main.d34355ef.js"
+  ]
+}

@@ -1,0 +1,303 @@
+@import "../../styles/mixins.scss";
+
+.hero_stat_main {
+   background-color: #1c242d;
+   padding-top: 10%;
+
+   @include ladtop {
+      padding-top: 8%;
+   }
+}
+
+.hero_wrap {
+   width: 84%;
+   margin: auto;
+   margin-bottom: 7vh;
+
+   @include ladtop {
+      width: 94%;
+      margin-bottom: 2vh;
+      margin-top: 5vh;
+   }
+
+   @include phone {
+      margin-top: 5vh;
+      margin-bottom: 0;
+   }
+}
+
+.hero_header_wrap {
+   width: 100%;
+
+   @include phone {
+      margin-bottom: 14%;
+   }
+}
+
+.hero_header_background {
+   width: 80%;
+   height: 28%;
+   object-fit: cover;
+   filter: blur(8px);
+   position: absolute;
+   left: 10%;
+   opacity: 0.35;
+
+   @include ladtop {
+      width: 90%;
+      left: 5%;
+   }
+
+   @include phone {
+      height: 50%;
+   }
+}
+
+.hero_header {
+   display: flex;
+   align-items: center;
+   padding: 5vh 8vh;
+   position: relative;
+   z-index: 2;
+
+   @include ladtop {
+      padding: 5vh 6vh;
+   }
+
+   @include phone {
+      padding: 3vh 6vh;
+      flex-direction: column;
+      justify-content: center;
+   }
+}
+
+.hero_image {
+   width: 25%;
+   border-radius: 16px;
+
+   @include ladtop {
+      width: 27%;
+   }
+
+   @include phone {
+      width: 70%;
+      margin-bottom: 25%;
+   }
+}
+
+.hero_name_block {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-left: 3%;
+
+   @include phone {
+      display: block;
+      margin-left: 0;
+      margin-bottom: 3vh;
+   }
+}
+
+.hero_name {
+   font-size: 42px;
+   font-weight: 800;
+   margin-bottom: 4%;
+
+   @include ladtop {
+      font-size: 22px;
+   }
+
+   @include phone {
+      font-size: 28px;
+      margin-bottom: 2%;
+   }
+}
+
+.hero_roles {
+   font-size: 20px;
+   font-weight: 600;
+
+   @include ladtop {
+      font-size: 13px;
+   }
+
+   @include phone {
+      font-size: 15px;
+   }
+}
+
+.role {
+   font-size: 18px;
+   font-weight: 400;
+   opacity: 0.8;
+
+   @include ladtop {
+      font-size: 12px;
+   }
+
+   @include phone {
+      font-size: 14px;
+   }
+}
+
+.hero_base_stats_container {
+   width: 17%;
+   height: 16vh;
+   background-color: rgba(10, 15, 15, 0.5);
+   border-radius: 16px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-around;
+   margin-left: 14%;
+
+   @include ladtop {
+      width: 18%;
+      height: 12vh;
+      font-size: 13px;
+   }
+
+   @include phone {
+      width: 100%;
+      height: 6vh;
+      flex-direction: row;
+      margin-left: 0;
+      background-color: rgba(10, 15, 15, 0.7);
+   }
+}
+
+.hero_base_stats_block {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin: 0.3vh 0 0.3vh 4vh;
+
+   @include ladtop {
+      margin: 0.3vh 0 0.3vh 2vh;
+   }
+
+   @include phone {
+      margin: 1.5vh 0 0.3vh 0.7vh;
+   }
+}
+
+.base_stat_icon {
+   @include ladtop {
+      width: 18px;
+   }
+}
+
+.base_stat_value {
+   margin-left: 1.5vh;
+}
+
+.str {
+   color: red;
+}
+
+.agi {
+   color: green;
+}
+
+.int {
+   color: dodgerblue;
+}
+
+.hero_stats_wrap {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   margin-top: 4%;
+   margin-bottom: 4vh;
+
+   @include ladtop {
+      width: 85%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-left: 7%;
+      margin-bottom: 0;
+      margin-top: 8%;
+   }
+
+   @include phone {
+      grid-template-columns: 1fr;
+      margin-left: 4%;
+   }
+}
+
+.hero_stats_container {
+   @include ladtop {
+      margin-left: 2.8vh;
+      margin-bottom: 5vh;
+      display: grid;
+      align-items: center;
+      align-self: center;
+   }
+}
+
+.hero_stat_block_light {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 34vh;
+   height: 5vh;
+   background-color: #242f39;
+
+   @include ladtop {
+      width: 37vh;
+      height: 3vh;
+   }
+
+   @include phone {
+      width: 45vh;
+      height: 4vh;
+   }
+}
+
+.hero_stat_block_dark {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 34vh;
+   height: 5vh;
+   background-color: #192127;
+
+   @include ladtop {
+      width: 37vh;
+      height: 3vh;
+   }
+
+   @include phone {
+      width: 45vh;
+      height: 4vh;
+   }
+}
+
+.stat_description {
+   margin-left: 0.8vh;
+   opacity: 0.7;
+   font-size: 15px;
+
+   @include ladtop {
+      font-size: 12px;
+   }
+
+   @include phone {
+      font-size: 14px;
+   }
+}
+
+.stat_value {
+   margin-right: 0.8vh;
+   font-size: 16px;
+   font-weight: 700;
+
+   @include ladtop {
+      font-size: 12px;
+   }
+
+   @include phone {
+      font-size: 14px;
+      font-weight: 500;
+   }
+}

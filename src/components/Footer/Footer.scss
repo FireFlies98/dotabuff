@@ -1,0 +1,132 @@
+@import "../../styles/mixins.scss";
+
+.footer_wrap {
+   width: 84%;
+   margin: auto;
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
+   margin-bottom: 2vh;
+
+   @include ladtop {
+      width: 94%;
+   }
+
+   @include phone {
+      width: 98%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+}
+
+.footer_link {
+   display: flex;
+   align-items: center;
+
+   @include phone {
+      justify-content: center;
+   }
+}
+
+.link_container {
+   margin-right: 3vh;
+   display: flex;
+   align-items: center;
+}
+
+.link_up {
+   margin-right: 1vh;
+   color: #e0563e;
+}
+
+.link_icon_git {
+   fill: rgba(246, 246, 246, 1);
+   margin-left: 1vh;
+   width: 25px;
+
+   @include ladtop {
+      width: 17px;
+   }
+}
+
+.google {
+   width: 150px;
+
+   @include ladtop {
+      width: 92px;
+   }
+}
+
+.apple {
+   width: 130px;
+
+   @include ladtop {
+      width: 80px;
+   }
+}
+
+.footer_text_border {
+   width: 80%;
+   height: 3vh;
+   border-bottom: 1px solid rgba(80, 78, 78, 0.8);
+
+   @include ladtop {
+      width: 90%;
+   }
+
+   @include phone {
+      margin-left: 4vh;
+      width: 82%;
+      display: flex;
+      justify-content: center;
+   }
+}
+
+.footer_text {
+   font-size: 0.8em;
+   display: flex;
+
+   @include ladtop {
+      font-size: 0.6em;
+   }
+}
+
+.link_icon_steam {
+   fill: rgba(246, 246, 246, 1);
+   margin-left: 1.7vh;
+   width: 16px;
+
+   @include ladtop {
+      width: 11px;
+   }
+}
+
+.hover:hover {
+   opacity: 0.7;
+}
+
+.footer_navigation {
+   display: flex;
+   margin-bottom: 2vh;
+
+   @include phone {
+      margin-top: 3vh;
+      margin-left: 3vh;
+   }
+}
+
+.footer_nav {
+   font-size: 16px;
+   color: rgb(102, 187, 255);
+   margin-right: 4vh;
+
+   @include ladtop {
+      font-size: 13px;
+      margin-right: 3vh;
+   }
+}
+
+.footer_nav:hover {
+   opacity: 0.8;
+}

@@ -1,0 +1,535 @@
+@import "../../styles/mixins.scss";
+
+.main_wrapper {
+   width: 100%;
+   margin: auto;
+   padding-bottom: 4vh;
+   padding-top: 5%;
+
+   @include ladtop {
+      padding-top: 8.5%;
+      margin-bottom: 6vh;
+   }
+
+   @include phone {
+      padding-top: 14.7%;
+   }
+}
+
+.main_header_container {
+   margin: 0 0 3vh 0;
+   padding: 6vh 16vh 6vh 16vh;
+   background: #2e3740;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   @include ladtop {
+      padding: 3vh 6vh 3vh 6vh;
+   }
+
+   @include phone {
+      flex-direction: column;
+   }
+}
+
+.main_header_player {
+   display: flex;
+
+   @include phone {
+      flex-direction: column;
+   }
+}
+
+.player_image {
+   width: 18vh;
+   border-radius: 50%;
+
+   @include ladtop {
+      width: 13vh;
+   }
+
+   @include phone {
+      width: 24vh;
+      margin-bottom: 4vh;
+   }
+}
+
+.player_information_container {
+   margin-left: 7vh;
+
+   @include ladtop {
+      margin-left: 4vh;
+   }
+
+   @include phone {
+      margin-left: 0;
+   }
+}
+
+.player_name_block {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-bottom: 4vh;
+
+   @include phone {
+      align-items: center;
+      margin-bottom: 6vh;
+   }
+}
+
+.player_name {
+   color: #a9cf54;
+   font-size: 20px;
+   margin-bottom: 1vh;
+   font-weight: 700;
+
+   @include ladtop {
+      font-size: 16px;
+   }
+
+   @include phone {
+      font-size: 22px;
+   }
+}
+
+.link_icon_steam_player {
+   fill: #5494cf;
+   margin-left: 2vh;
+   width: 2.5vh;
+
+   @include ladtop {
+      width: 2vh;
+   }
+
+   @include phone {
+      width: 3.5;
+   }
+}
+
+.player_id {
+   font-size: 12px;
+   font-weight: 500;
+   color: #ffffff99;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   @include phone {
+      font-size: 14px;
+   }
+}
+
+.player_games_block {
+   display: flex;
+
+   @include phone {
+      margin-bottom: 4vh;
+   }
+}
+
+.player_games {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   margin-right: 5vh;
+
+   @include ladtop {
+      margin-right: 3vh;
+   }
+
+   @include phone {
+      margin-left: 2.5vh;
+      align-items: center;
+   }
+}
+
+.player_games_title {
+   font-size: 15px;
+   font-weight: 300;
+   color: rgba(255, 255, 255, 0.54);
+   margin-bottom: 1vh;
+   text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+
+   @include ladtop {
+      font-size: 14px;
+   }
+}
+
+.player_games_all {
+   font-size: 28px;
+   font-weight: bolder;
+
+   @include ladtop {
+      font-size: 21px;
+   }
+}
+
+.player_games_win {
+   font-size: 28px;
+   font-weight: bolder;
+   color: #a9cf54;
+
+   @include ladtop {
+      font-size: 21px;
+   }
+}
+
+.player_games_lose {
+   font-size: 28px;
+   font-weight: bolder;
+   color: rgb(255, 76, 76);
+
+   @include ladtop {
+      font-size: 21px;
+   }
+}
+
+.player_games_winrate {
+   font-size: 28px;
+   font-weight: bolder;
+   color: #5494cf;
+   display: flex;
+
+   @include ladtop {
+      font-size: 21px;
+   }
+}
+
+.main_player_rank {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   -webkit-box-pack: center;
+   justify-content: center;
+}
+
+.player_rank_icon {
+   width: 22vh;
+
+   @include ladtop {
+      width: 15vh;
+   }
+
+   @include phone {
+      width: 20vh;
+   }
+}
+
+.player_rank {
+   position: absolute;
+   align-self: center;
+   margin-top: 14.5vh;
+   margin-left: 1px;
+   font-size: 28px;
+   font-weight: bolder;
+   text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+
+   @include ladtop {
+      margin-top: 10vh;
+      font-size: 20px;
+   }
+
+   @include phone {
+      margin-top: 13vh;
+      font-size: 22px;
+   }
+}
+
+.main_content {
+   width: 84%;
+   margin: auto;
+   display: flex;
+
+   @include ladtop {
+      width: 92%;
+      flex-direction: column;
+      margin-top: 5vh;
+   }
+}
+
+.content_rank_block {
+   width: 30%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-around;
+   margin-left: 10vh;
+
+   @include ladtop {
+      width: 100%;
+      margin-bottom: 6vh;
+      margin-left: 0;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+   }
+
+   @include phone {
+      flex-direction: column;
+      margin-bottom: 4vh;
+   }
+}
+
+.player_mmr {
+   font-size: 18px;
+   display: flex;
+   align-items: flex-end;
+   color: rgba(255, 255, 255, 0.774);
+   text-shadow: rgb(0, 0, 0) 5px 5px 15px;
+
+   @include ladtop {
+      font-size: 14px;
+   }
+
+   @include phone {
+      justify-content: space-between;
+      align-items: center;
+      margin: 0.7vh 2vh 0 2vh;
+   }
+}
+
+.mmr_value {
+   font-size: 28px;
+   font-weight: bolder;
+   color: rgba(240, 248, 255, 0.87);
+   margin-left: 4vh;
+
+   @include ladtop {
+      font-size: 20px;
+      margin-left: 2vh;
+   }
+
+   @include phone {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.774);
+      text-shadow: rgb(0, 0, 0) 5px 5px 15px;
+   }
+}
+
+.content_total_stats_block {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.content_total_kda {
+   display: flex;
+   margin-bottom: 4vh;
+
+   @include ladtop {
+      width: 100%;
+      justify-content: space-around;
+   }
+
+   @include phone {
+      flex-direction: column;
+      margin-left: 1.5vh;
+   }
+}
+
+.kda_block {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-right: 7vh;
+
+   @include ladtop {
+      align-items: center;
+      margin-left: 3vh;
+   }
+
+   @include phone {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+   }
+}
+
+.kda_title {
+   font-size: 18px;
+   color: rgba(255, 255, 255, 0.774);
+   text-shadow: rgb(0, 0, 0) 5px 5px 15px;
+   margin-bottom: 2vh;
+   font-weight: 200;
+
+   @include ladtop {
+      font-size: 14px;
+   }
+
+   @include phone {
+      margin-bottom: 0;
+      margin-left: 2vh;
+   }
+}
+
+.kills_stats,
+.deaths_stats,
+.assists_stats,
+.kda_stats {
+   font-size: 28px;
+   font-weight: bolder;
+   text-shadow: rgb(0, 0, 0) 5px 5px 15px;
+
+   @include ladtop {
+      font-size: 22px;
+   }
+
+   @include phone {
+      font-size: 18px;
+      margin-right: 2vh;
+   }
+}
+
+.kills_stats {
+   color: #a9cf54;
+
+   @include phone {
+      color: rgba(255, 255, 255, 0.774);
+   }
+}
+
+.deaths_stats {
+   color: rgb(255, 76, 76);
+
+   @include phone {
+      color: rgba(255, 255, 255, 0.774);
+   }
+}
+
+.assists_stats {
+   color: #5494cf;
+
+   @include phone {
+      color: rgba(255, 255, 255, 0.774);
+   }
+}
+
+.kda_stats {
+   color: blueviolet;
+
+   @include phone {
+      color: rgba(255, 255, 255, 0.774);
+   }
+}
+
+.content_total_stats {
+   display: flex;
+   margin-left: 7vh;
+
+   @include phone {
+      flex-direction: column;
+      margin-left: 5vh;
+   }
+}
+
+.total_stats_first_section,
+.total_stats_second_section {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.total_stats_first_section {
+   margin-right: 20vh;
+
+   @include phone {
+      margin-bottom: 4vh;
+   }
+}
+
+.stats_block {
+   margin-bottom: 2.8vh;
+   width: 30vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+
+   @include ladtop {
+      align-items: flex-end;
+   }
+
+   @include phone {
+      margin-bottom: 0;
+      align-items: center;
+   }
+}
+
+.stats_title {
+   font-size: 18px;
+   color: rgba(255, 255, 255, 0.774);
+   text-shadow: rgb(0, 0, 0) 5px 5px 15px;
+
+   @include ladtop {
+      font-size: 14px;
+   }
+
+   @include phone {
+      margin-left: 2vh;
+   }
+}
+
+.gpm_stats {
+   font-size: 20px;
+   font-weight: bold;
+   color: rgb(240, 183, 76);
+
+   @include ladtop {
+      font-size: 18px;
+   }
+
+   @include phone {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.774);
+      margin-right: 2vh;
+   }
+}
+
+.xpr_stats {
+   font-size: 20px;
+   font-weight: bold;
+   color: #5494cf;
+
+   @include ladtop {
+      font-size: 18px;
+   }
+
+   @include phone {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.774);
+      margin-right: 2vh;
+   }
+}
+
+.stats_value {
+   font-size: 20px;
+   font-weight: bold;
+   color: rgba(255, 255, 255, 0.774);
+   text-shadow: rgb(0, 0, 0) 5px 5px 15px;
+
+   @include ladtop {
+      font-size: 18px;
+   }
+
+   @include phone {
+      margin-right: 2vh;
+   }
+}
+
+.ligth_block {
+   @include phone {
+      width: 45vh;
+      height: 4vh;
+      background: #242f39;
+   }
+}
+
+.dark_block {
+   @include phone {
+      width: 45vh;
+      height: 4vh;
+      background: #192127;
+   }
+}

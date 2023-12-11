@@ -1,0 +1,349 @@
+@import "../../styles/mixins.scss";
+
+.body_wrap {
+   width: 84%;
+   margin: auto;
+   padding-bottom: 3vh;
+   padding-top: 10%;
+
+   @include ladtop {
+      width: 99%;
+   }
+
+   @include phone {
+      padding-top: 18%;
+   }
+}
+
+.body_header {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+   padding: 1vh 0 1vh;
+   background-color: #242f39;
+
+   @include ladtop {
+      padding: 2vh 0 2vh;
+      margin: 0 1vh;
+   }
+
+   @include phone {
+      padding: 1vh 0 1vh;
+   }
+}
+
+.body_header_title {
+   margin: 0 0 1vh 3vh;
+   font-size: 26px;
+   font-weight: bold;
+   text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+
+   @include phone {
+      font-size: 18px;
+   }
+}
+
+.body_header_subtitle {
+   margin: 0 0 0 3vh;
+   color: rgb(153, 153, 153);
+   text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+
+   @include phone {
+      font-size: 14px;
+   }
+}
+
+.body_main {
+   margin-top: 1vh;
+   background: #192027;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.body_main_titles {
+   width: 90%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 4vh;
+
+   @include phone {
+      font-size: 14px;
+   }
+}
+
+.title_team_margin {
+   @include phone {
+      margin-left: 9vh;
+   }
+}
+
+.title_id_display {
+   @include phone {
+      display: none;
+   }
+}
+
+.body_main_pleyers {
+   width: 98%;
+   height: 7vh;
+   background: #2e3740;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0.35vh;
+}
+
+.body_main_pleyers:hover {
+   background: #37414b;
+   transition: 0.4s;
+}
+
+.players_block {
+   display: flex;
+   width: 30%;
+   margin-left: 1.5vh;
+
+   @include ladtop {
+      width: 25%;
+   }
+
+   @include phone {
+      width: 40%;
+   }
+}
+
+.players_avatar_img {
+   width: 5vh;
+}
+
+.players_name_block {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   margin-left: 2vh;
+}
+
+.players_name {
+   font-size: 14px;
+   color: #a9cf54;
+   font-weight: 600;
+   display: flex;
+   text-align: left;
+
+   @include ladtop {
+      font-size: 12px;
+   }
+}
+
+.players_id {
+   margin-top: 0.5vh;
+   font-size: 12px;
+   color: #ffffff99;
+   font-weight: bolder;
+
+   @include ladtop {
+      font-size: 11px;
+   }
+}
+
+.players_team_block {
+   width: 28%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   text-align: left;
+
+   @include ladtop {
+      width: 26%;
+      margin-left: 2vh;
+   }
+
+   @include phone {
+      width: 33%;
+   }
+}
+
+.players_team {
+   color: #a9cf54;
+   font-size: 14px;
+
+   @include ladtop {
+      font-size: 12px;
+   }
+}
+
+.players_team_id {
+   margin-top: 0.5vh;
+   font-size: 12px;
+   color: #ffffff99;
+   font-weight: bolder;
+
+   @include ladtop {
+      font-size: 11px;
+   }
+}
+
+.players_steam_block {
+   width: 27%;
+   display: flex;
+   align-items: flex-start;
+   font-weight: bold;
+   color: #ffffffc0;
+
+   @include phone {
+      display: none;
+   }
+}
+
+.player_steam_id {
+   font-size: 12px;
+}
+
+.players_country_block {
+   width: 17%;
+   color: #ffffffc0;
+   font-weight: bold;
+
+   @include ladtop {
+      width: 22%;
+   }
+}
+
+.players_country_code {
+   font-size: 12px;
+
+   @include phone {
+      margin-right: 4vh;
+   }
+}
+
+.body_footer {
+   width: 98%;
+   display: flex;
+   align-items: center;
+   margin-top: 2.5vh;
+   margin-bottom: 1vh;
+   height: 5vh;
+}
+
+.pagination {
+   display: flex;
+   margin-left: 1vh;
+   margin-right: 1vh;
+
+   @include phone {
+      margin-left: 0;
+   }
+}
+
+.page_item {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0.7vh;
+   width: 3.5vh;
+   height: 3.5vh;
+
+   @include phone {
+      width: 2vh;
+      height: 2vh;
+      margin: 0.5vh;
+   }
+}
+
+.page_item_active {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0.7vh;
+   width: 3.5vh;
+   height: 3.5vh;
+   background: #2e3740;
+
+   @include phone {
+      width: 2vh;
+      height: 2vh;
+      margin: 0.5vh;
+   }
+}
+
+.page_link {
+   cursor: pointer;
+   font-size: 18px;
+   font-weight: 600;
+   color: #ffffffc0;
+
+   @include phone {
+      font-size: 13px;
+   }
+}
+
+.page_link:hover {
+   color: #a9cf54;
+}
+
+.active_page_link {
+   font-size: 18px;
+   color: #a9e032;
+
+   @include phone {
+      font-size: 13px;
+   }
+}
+
+.prev_page_btn,
+.next_page_btn {
+   width: 7vh;
+   height: 4vh;
+   font-size: 14px;
+   margin-left: 2vh;
+   border: 1px solid #a9cf54;
+   background: none;
+   color: #a9cf54;
+
+   @include ladtop {
+      width: 8vh;
+   }
+
+   @include phone {
+      width: 6vh;
+      font-size: 8px;
+      margin-right: 1vh;
+      margin-left: 0;
+      height: 3vh;
+   }
+}
+
+.prev_page_btn:hover,
+.next_page_btn:hover {
+   background: #a9cf54;
+   color: #242f39;
+   transition: 0.4s;
+}
+
+.disable {
+   width: 7vh;
+   height: 4vh;
+   font-size: 14px;
+   margin-left: 2vh;
+   border: 1px solid #ffffff99;
+   background: none;
+   color: #ffffff99;
+
+   @include ladtop {
+      width: 8vh;
+   }
+
+   @include phone {
+      width: 6vh;
+      font-size: 8px;
+      margin-left: 1vh;
+      height: 3vh;
+   }
+}

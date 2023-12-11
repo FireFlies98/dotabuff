@@ -1,0 +1,375 @@
+@import "../../styles/mixins.scss";
+
+.header {
+   height: 9vh;
+   background-color: #242f39;
+   display: flex;
+   align-items: center;
+   position: fixed;
+   width: 100%;
+   z-index: 101;
+}
+
+.header_wrap {
+   width: 84%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   @include ladtop {
+      width: 94%;
+   }
+}
+
+.header_container_nav {
+   display: flex;
+   align-items: center;
+}
+
+.navigation_logo_block {
+   width: 9em;
+   height: 2.3em;
+   background-color: #ed3b1c;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   @include ladtop {
+      margin-left: 7vh;
+   }
+
+   @include phone {
+      width: 7em;
+      margin-left: 11vh;
+   }
+}
+
+.nav_logo {
+   font-size: 1.3em;
+   font-weight: 600;
+
+   @include phone {
+      font-size: 1.1em;
+   }
+}
+
+.header_navigation {
+   display: flex;
+   width: 45vh;
+   justify-content: space-between;
+   align-items: inherit;
+   margin-left: 6vh;
+
+   @include ladtop {
+      display: none;
+   }
+}
+
+.header_nav {
+   font-size: 1em;
+   font-weight: 500;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.active_link {
+   color: #a9cf54;
+   font-size: 1em;
+   font-weight: 500;
+   transition-duration: 0.4s;
+   text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+}
+
+.header_nav:hover {
+   color: #a9cf54;
+   text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+   transition: 0.4s;
+}
+
+.navigation_form {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.search_icon {
+   width: 3vh;
+   background: #242f39;
+   cursor: pointer;
+   display: none;
+
+   @include ladtop {
+      display: block;
+      margin-left: 50vh;
+   }
+
+   @include phone {
+      display: block;
+      margin-left: 12vh;
+   }
+}
+
+.search_form {
+   width: 33vh;
+   height: 4vh;
+   position: relative;
+
+   @include ladtop {
+      display: none;
+   }
+}
+
+.form {
+   width: 30vh;
+   height: 3vh;
+   box-shadow: inset 0 0 3px rgb(0, 0, 0);
+}
+
+.input {
+   padding-left: 2vh;
+   width: 30vh;
+   height: 3vh;
+   font-size: 16px;
+   outline: none;
+   background-color: #1c242d;
+   color: rgb(198, 215, 219);
+   border: none;
+   box-shadow: inset 0 0 3px rgb(0, 0, 0);
+}
+
+.overplay {
+   opacity: 1;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+}
+
+.search_input {
+   padding-left: 2vh;
+   width: 33vh;
+   height: 4vh;
+   font-size: 16px;
+   outline: none;
+   background-color: #1c242d;
+   color: rgb(198, 215, 219);
+   border: none;
+   box-shadow: inset 0 0 3px rgb(0, 0, 0);
+}
+
+.search_error {
+   width: 33vh;
+   font-size: 12px;
+   font-weight: bold;
+   color: #ed3b1c;
+   display: flex;
+   justify-content: start;
+   align-items: flex-start;
+   margin: 0.5vh 0 0.5vh 1vh;
+}
+
+.autocomplete {
+   position: absolute;
+   left: 0;
+   top: 6.5vh;
+   width: 55vh;
+   background-color: #242f39;
+   z-index: 3;
+   box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.2);
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   max-height: 30vh;
+   height: auto;
+   overflow: auto;
+}
+
+.autocomplete_item {
+   display: flex;
+   align-items: flex-start;
+   padding: 1.5vh;
+   width: 94.3%;
+}
+
+.autocomplete_item:hover {
+   background-color: #2f3b46;
+   cursor: pointer;
+   transition: cubic-bezier(1, 0, 0, 1) 0.15s all;
+}
+
+.autocomplete_item_img {
+   width: 13vh;
+   margin-right: 2vh;
+}
+
+.autocomplete_item_container {
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+}
+
+.autocomplete_item_name {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 18px;
+   color: #a9cf54;
+   margin-bottom: 1vh;
+   font-weight: bold;
+}
+
+.autocomplete_item_attribute {
+   font-size: 15px;
+   font-weight: normal;
+}
+
+.autocomplete_item_role {
+   font-size: 12px;
+}
+
+.login {
+   font-size: 1em;
+   font-weight: 700;
+   height: 8vh;
+   width: 7vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   @include ladtop {
+      font-size: 0.8em;
+      text-shadow: rgb(0, 0, 0) 0px 0px 5px;
+   }
+}
+
+.active_login {
+   width: 7vh;
+   font-weight: 700;
+}
+
+.header_log_in {
+   font-size: 1.1em;
+   font-weight: 600;
+}
+
+.menu__box {
+   display: flex;
+   position: fixed;
+   visibility: hidden;
+   top: 66px;
+   left: -100%;
+   width: 28.7%;
+   height: 100%;
+   padding: 20px 0;
+   list-style: none;
+   text-align: center;
+   background-color: #1c242d;
+   box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.6);
+   transition-duration: 0.5s;
+   z-index: 100;
+
+   @include phone {
+      width: 50%;
+   }
+}
+
+.mobile--navigation {
+   display: none;
+
+   @include ladtop {
+      display: block;
+   }
+}
+
+.navigation-menu__item {
+   display: block;
+   margin: 3vh 0;
+   color: white;
+   font-size: 18px;
+   font-weight: bold;
+   transition-duration: 0.4s;
+}
+
+.navigation-menu__item:hover {
+   color: rgb(100, 136, 145);
+}
+
+#menu__toggle {
+   opacity: 0;
+
+   @include ladtop {
+      display: none;
+   }
+
+   @include mini-desktop {
+      display: none;
+   }
+
+   @include desktop {
+      display: none;
+   }
+}
+
+.navigation__btn {
+   display: none;
+   position: absolute;
+   align-items: center;
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+   z-index: 1;
+
+   @include ladtop {
+      display: flex;
+      margin-top: -1.8vh;
+   }
+
+   @include phone {
+      margin-left: 5%;
+   }
+}
+
+.navigation__btn > span,
+.navigation__btn > span::before,
+.navigation__btn > span::after {
+   display: block;
+   position: absolute;
+   width: 100%;
+   height: 3px;
+   background-color: rgb(219, 219, 219);
+   transition-duration: 0.5s;
+}
+
+.navigation__btn > span::before {
+   content: "";
+   top: -7px;
+}
+
+.navigation__btn > span::after {
+   content: "";
+   top: 7px;
+}
+
+#menu__toggle:checked ~ .navigation__btn > span {
+   transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .navigation__btn > span::before {
+   top: 0;
+   transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .navigation__btn > span::after {
+   top: 0;
+   transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+   visibility: visible;
+   left: 0;
+}

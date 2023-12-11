@@ -1,0 +1,39 @@
+@import "../../styles/mixins.scss";
+
+.loader_main {
+   height: 1000vh;
+}
+
+.mask {
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   z-index: 100;
+   transition: 0.6s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.loader {
+   width: 100px;
+   height: 100px;
+   border: 16px solid rgba(102, 187, 255, 0.3);
+   border-radius: 50%;
+   border-left-color: rgb(102, 187, 255);
+   animation: loader 1.3s linear infinite;
+
+   @include ladtop {
+      width: 60px;
+      height: 60px;
+      border: 13px solid rgba(102, 187, 255, 0.3);
+      border-left-color: rgb(102, 187, 255);
+   }
+}
+
+@keyframes loader {
+   100% {
+      transform: rotate(360deg);
+   }
+}

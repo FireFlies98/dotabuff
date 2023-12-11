@@ -1,0 +1,98 @@
+@import "../../styles/mixins.scss";
+
+.log_in_main {
+   height: 78vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 5%;
+
+   @include ladtop {
+      padding-top: 10%;
+   }
+}
+
+.log_in_block {
+   width: 60vh;
+   height: 60%;
+   background-color: #242f39;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: column;
+   box-shadow: rgb(0, 0, 0) 5px 5px 50px;
+
+   @include phone {
+      width: 50vh;
+   }
+}
+
+.input_log_in_block {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: flex-start;
+}
+
+.log_in_title {
+   font-size: 30px;
+   font-weight: bold;
+   color: rgb(198, 215, 219);
+   text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+
+   @include phone {
+      font-size: 22px;
+   }
+}
+
+.log_in_name {
+   width: 30vh;
+   height: 4vh;
+   font-size: 18px;
+   outline: none;
+   background-color: #242f39;
+   color: rgb(198, 215, 219);
+   border: none;
+   border-bottom: 1px solid rgb(102, 187, 255);
+   margin-bottom: 1.5vh;
+}
+
+.log_in_password {
+   width: 30vh;
+   height: 4vh;
+   font-size: 18px;
+   outline: none;
+   background-color: #242f39;
+   color: rgb(198, 215, 219);
+   border: none;
+   border-bottom: 1px solid rgb(102, 187, 255);
+   margin-bottom: 1.5vh;
+}
+
+.logIn_error {
+   font-size: 13px;
+   font-weight: bold;
+   height: 2vh;
+   color: rgb(116, 32, 32);
+   text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+   margin-bottom: 3vh;
+}
+
+.log_in_button {
+   width: 13vh;
+   height: 3vh;
+   cursor: pointer;
+   border: none;
+   background-color: rgb(102, 187, 255);
+   border-radius: 6px;
+   font-size: 16px;
+}
+
+.log_in_button:hover {
+   opacity: 0.8;
+}
+
+.looser {
+   font-size: 16px;
+   font-weight: 600;
+}

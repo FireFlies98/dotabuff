@@ -51,6 +51,7 @@ export default function Header() {
    }, []);
 
    const API = "https://api.opendota.com";
+   const API2 = "https://cdn.cloudflare.steamstatic.com";
 
    const filteredHeroes = heroes.filter((hero) => {
       return hero.localized_name.toLowerCase().includes(value.toLowerCase());
@@ -213,7 +214,7 @@ export default function Header() {
                                       key={item.localized_name}
                                    >
                                       <img
-                                         src={`${API + item.img}`}
+                                         src={`${API2 + item.img}`}
                                          alt="hero"
                                          className="autocomplete_item_img"
                                       />

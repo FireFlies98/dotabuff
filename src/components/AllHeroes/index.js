@@ -6,6 +6,7 @@ import { MyLoader } from "../index";
 
 function AllHeroes(props) {
    const API = "https://api.opendota.com";
+   const API2 = "https://cdn.cloudflare.steamstatic.com";
 
    return (
       <>
@@ -36,8 +37,9 @@ function AllHeroes(props) {
                               key={item.localized_name}
                            >
                               <div className="hero_block">
+                                 {console.log(API2 + item.img)}
                                  <img
-                                    src={`${API + item.img}`}
+                                    src={`${API2 + item.img}`}
                                     alt="hero"
                                     className="heroes_img"
                                  />

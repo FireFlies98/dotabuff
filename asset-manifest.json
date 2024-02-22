@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/dotabuff/static/css/main.afa56df0.css",
-    "main.js": "/dotabuff/static/js/main.d34355ef.js",
+    "main.js": "/dotabuff/static/js/main.bcafe29a.js",
     "index.html": "/dotabuff/index.html",
     "main.afa56df0.css.map": "/dotabuff/static/css/main.afa56df0.css.map",
-    "main.d34355ef.js.map": "/dotabuff/static/js/main.d34355ef.js.map"
+    "main.bcafe29a.js.map": "/dotabuff/static/js/main.bcafe29a.js.map"
   },
   "entrypoints": [
     "static/css/main.afa56df0.css",
-    "static/js/main.d34355ef.js"
+    "static/js/main.bcafe29a.js"
   ]
 }

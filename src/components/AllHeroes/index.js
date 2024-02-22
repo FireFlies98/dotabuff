@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 import { MyLoader } from "../index";
 
 function AllHeroes(props) {
-   const API = "https://api.opendota.com";
-   const API2 = "https://cdn.cloudflare.steamstatic.com";
+   const API = "https://cdn.cloudflare.steamstatic.com";
 
    return (
       <>
@@ -37,9 +36,9 @@ function AllHeroes(props) {
                               key={item.localized_name}
                            >
                               <div className="hero_block">
-                                 {console.log(API2 + item.img)}
+                                 {console.log(API + item.img)}
                                  <img
-                                    src={`${API2 + item.img}`}
+                                    src={`${API + item.img}`}
                                     alt="hero"
                                     className="heroes_img"
                                  />

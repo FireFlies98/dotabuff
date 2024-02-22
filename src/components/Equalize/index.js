@@ -13,7 +13,7 @@ export default function Equalize() {
    const [firstHero, setFirstHero] = useState({});
    const [secondHero, setSecondHero] = useState({});
 
-   const API = "https://api.opendota.com";
+   const API = "https://cdn.cloudflare.steamstatic.com";
 
    const getHeroes = async () => {
       const res = await axios("https://api.opendota.com/api/heroStats");

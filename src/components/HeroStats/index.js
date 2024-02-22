@@ -10,8 +10,7 @@ export default function HeroStats() {
    const [loader, setLoader] = useState(true);
 
    const params = useParams();
-   const API = "https://api.opendota.com";
-   const API2 = "https://cdn.cloudflare.steamstatic.com";
+   const API = "https://cdn.cloudflare.steamstatic.com";
 
    useEffect(() => {
       getHeroStats();
@@ -36,12 +35,12 @@ export default function HeroStats() {
                   <div className="hero_header_wrap">
                      <img
                         alt="hero_background"
-                        src={`${API2 + heroStat.img}`}
+                        src={`${API + heroStat.img}`}
                         className="hero_header_background"
                      />
                      <div className="hero_header">
                         <img
-                           src={`${API2 + heroStat.img}`}
+                           src={`${API + heroStat.img}`}
                            alt="hero_image"
                            className="hero_image"
                         />
